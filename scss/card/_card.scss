@@ -1,0 +1,52 @@
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 2rem -2rem $light-gray;
+
+  &__inner {
+    margin: 1.5rem 2rem 2rem;
+  }
+
+  &__profile {
+    margin-bottom: 1rem;
+  }
+
+  // Card variations
+  &_color {
+    &_purple {
+      background-color: $moderate-violet;
+      background-image: url(../../images/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-position: 90% 0;
+      color: $white;
+    }
+
+    &_gray {
+      background-color: $very-dark-grayish-blue;
+      color: $white;
+    }
+
+    &_white {
+      background-color: $white;
+      color: $very-dark-grayish-blue;
+    }
+
+    &_black {
+      background-color: $very-dark-blackish-blue;
+      color: $white;
+    }
+  }
+
+  &__heading {
+    font-size: $font-size-large;
+    font-weight: $font-weight-semibold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  &__body {
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    line-height: 1.385;
+    opacity: 0.7;
+  }
+}

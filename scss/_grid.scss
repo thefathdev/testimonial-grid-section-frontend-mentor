@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    grid-template-areas:
+      'card1 card3'
+      'card1 card4'
+      'card2 card4'
+      'card5 card5';
+
+    &__card-1 {
+      grid-area: card1;
+    }
+
+    &__card-2 {
+      grid-area: card2;
+    }
+
+    &__card-3 {
+      grid-area: card3;
+    }
+
+    &__card-4 {
+      grid-area: card4;
+    }
+
+    &__card-5 {
+      grid-area: card5;
+    }
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'card1 card1 card2 card5'
+      'card3 card4 card4 card5';
+  }
+}

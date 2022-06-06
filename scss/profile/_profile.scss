@@ -1,0 +1,41 @@
+@use 'sass:color';
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  &__img {
+    max-width: 1.875rem;
+    height: auto;
+    border-radius: 50%;
+
+    &_bordered {
+      &_white {
+        border: 2px solid rgba($white, 0.5);
+      }
+      &_purple {
+        border: 2px solid $moderate-violet;
+      }
+    }
+  }
+
+  &__id {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__name {
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+  }
+
+  &__verification {
+    font-size: $font-size-small;
+    font-weight: $font-weight-medium;
+    opacity: 0.5;
+  }
+}
