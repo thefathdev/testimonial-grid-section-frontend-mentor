@@ -18,6 +18,10 @@
       background-repeat: no-repeat;
       background-position: 90% 0;
       color: $white;
+
+      @include tablet {
+        background-position: 85% 0;
+      }
     }
 
     &_gray {

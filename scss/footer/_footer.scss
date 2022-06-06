@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $very-dark-blackish-blue;
+  color: $moderate-violet;
+
+  &__link {
+    text-decoration: none;
+    color: $white;
+  }
+}
